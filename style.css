@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+  --primary-color: #fff;
+  --background-color-header: #be3143;
+  --background-color-container: #2b2c2e;
+  --background-color-projects: #44577d;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--primary-color);
+  margin: 0;
+  margin-top: 5rem;
+}
+
+/*=========== Navbar ==============*/
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  height: 5rem;
+  background: var(--background-color-header);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+#navbar ul {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  margin-right: 1rem;
+}
+#navbar ul li {
+  list-style: none;
+  text-decoration: none;
+  padding: 1rem 0.5rem;
+  
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+/*=========== Welcome section ==============*/
+#welcome-section {
+    max-width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color-container);
+    
+}
+#welcome-section h1{
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+.thin-text {
+    margin-top: -2rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 100;
+}
+/*=========== Projects section ==============*/
+#projects {
+    background-color: var(--background-color-projects);
+    text-align: center;
+    padding: 2rem 0;
+}
+.project-title {
+    margin: 1rem ;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    border-bottom: 1.5px solid var(--primary-color);
+}
+.tiles-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 1rem;
+}
+.project-tile {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    padding-bottom: 1.5rem;
+    background-color: var(--background-color-container);
+    text-align: center;
+
+}
+.project-tile img {
+    max-width: 100%;
+    height: 90%;
+    margin-bottom: 1.5rem;
+}
+.project-tile a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding-bottom: 1.5rem;
+}
+.project-page-link a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 1rem 1.5rem;
+    background-color: var(--background-color-container);
+    border-radius: 5px;
+}
+
+/*=========== let's work section ==============*/
+
+
+.let-work-together {
+    display: flex;
+    max-width: 100%;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    background: var(--background-color-container);
+    border-bottom: 0.3rem solid var(--background-color-header);
+    }
+    
+    .together-title {
+    font-size: 3rem;
+    font-weight: 900;
+    }
+    
+    .thin-text {
+    font-size: 1rem;
+    font-weight: 100;
+    font-style: italic;
+    }
+    
+    .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-center;
+    justify-content: center;
+    }
+    
+    ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-center;
+    justify-content: center;
+    }
+    
+    li {
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 1rem;
+    }
+    
+    li:hover {
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: 1s;
+    }
+    
+    a {
+    text-decoration: none;
+    color: var(--primary-color);
+    }
+    
+    footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-center;
+    justify-content: center;
+    color: var(--primary-color);
+    background: var(--background-color-container);
+    }
+    
+
+@media screen and (min-width: 560px) {
+    #projects {
+        padding: 5rem auto;
+    }
+    .tiles-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: .5rem;
+        max-width: 100%;
+        padding: 1rem;
+    }
+    .project-tile {
+        position: relative;
+        max-width: 30%;
+        height: auto;
+        margin: 2rem auto;
+        padding-bottom: 1.5rem;
+        background-color: var(--background-color-container);
+        text-align: center;
+    
+    }
+}
